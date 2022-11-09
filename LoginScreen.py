@@ -4,6 +4,7 @@ from kivy.app import Builder
 from kivymd.uix.dialog import MDDialog
 from kivymd.uix.button import MDRaisedButton
 
+from HomeScreen import HomeScreen
 from ShoppingScreen import ShoppingScreen
 from DetailScreen import DetailScreen
 
@@ -30,7 +31,7 @@ class LoginScreen(Screen):
             print(f'Username: {username}.')
             print(f'password: {password}.')
             app = MDApp.get_running_app()
-            app.show_screen('ShoppingScreen')
+            app.show_screen('HomeScreen')
         
     def set_name(self):
         ### Update the value of myname defined in the app object
@@ -81,12 +82,14 @@ if __name__ == '__main__':
             Builder.load_file('LoginScreen.kv')
             Builder.load_file('ShoppingScreen.kv')
             Builder.load_file('DetailScreen.kv')
+            Builder.load_file('HomeScreen.kv')
 
             self.screenmanager = ScreenManager()
 
             self.screenmanager.add_widget(LoginScreen(name='LoginScreen'))
             self.screenmanager.add_widget(ShoppingScreen(name='ShoppingScreen'))
             self.screenmanager.add_widget(DetailScreen(name='DetailScreen'))
+            self.screenmanager.add_widget(HomeScreen(name='HomeScreen'))
 
             return self.screenmanager
 
