@@ -1,0 +1,31 @@
+<LoginScreen>:
+    canvas.before:
+		Color:
+			rgba: .2,.2,.5,1
+		Rectangle:
+			pos: self.pos
+			size: self.size
+			source: ''
+		
+    BoxLayout:
+        orientation: 'vertical'
+        padding: dp(20)
+
+        MDTextField:
+            id: txt_username
+            hint_text: 'Username'
+
+        MDTextField:
+            id: txt_password
+            hint_text: 'Password'  
+            password: True
+
+        MDRaisedButton:
+            text: 'Login'
+            on_press: 
+                root.login()
+                root.set_name()
+
+
+
+        
