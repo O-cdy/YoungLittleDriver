@@ -1,0 +1,31 @@
+{
+  "details": {
+    "-MZnergMJcUvUMCjGuV1":
+    {
+      "description": "it is a noodle1",
+      "name": "fastnoodle1",
+      "pictureURL": "www.baidu.com",
+      "price": 10,
+      "post_time":"04/05/2021,03:19:06",
+      "type":"information"
+    },
+    "-MZnergMJcUvUMCjGuV2":
+    {
+      "description": "it is a noodle2",
+      "name": "fastnoodle2",
+      "pictureURL": "www.baidu.com",
+      "price": 20,
+      "post_time":"04/05/2021,03:19:06",
+      "type":"information"
+    },
+    "-MZnergMJcUvUMCjGuV3":
+    {
+      "description": "it is a noodle3",
+      "name": "fastnoodle3",
+      "pictureURL": "www.baidu.com",
+      "price": 15,
+      "post_time":"04/05/2021,03:19:06",
+      "type":"information"
+    }
+  }
+}
